@@ -4232,6 +4232,11 @@ bool Map::Instanceable() const
     return i_mapEntry && i_mapEntry->Instanceable();
 }
 
+bool Map::IsWorldMap() const
+{
+    return i_mapEntry && i_mapEntry->IsWorldMap();
+}
+
 bool Map::IsDungeon() const
 {
     return i_mapEntry && i_mapEntry->IsDungeon();
